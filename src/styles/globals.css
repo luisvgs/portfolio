@@ -55,7 +55,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
-  background-color: #1d1e20;
+  background-color: transparent;
 }
 
 .nav-container .logo {
