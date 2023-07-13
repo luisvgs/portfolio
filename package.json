@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.1.4",
+    "@chakra-ui/react": "^2.7.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "autoprefixer": "10.4.14",
+    "baffle": "^0.3.6",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
+    "framer-motion": "^10.12.18",
     "next": "13.4.9",
     "postcss": "8.4.25",
     "react": "18.2.0",
