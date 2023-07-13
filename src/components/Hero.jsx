@@ -12,7 +12,7 @@ const Hero = () => {
       speed: 100,
     });
     target.start();
-    target.reveal(2000, 130);
+    target.reveal(2800, 230);
   });
 
   return (

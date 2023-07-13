@@ -1,12 +1,20 @@
 import Image from "next/image";
 import {Text, Flex, Heading} from "@chakra-ui/react";
+import { useLottie } from "lottie-react";
+import Cat from "../assets/cat.json";
+
 const About = () => {
+   const options = {
+    animationData: Cat,
+    loop: true
+  };
+
+  const { View } = useLottie(options);
   return (
     <Flex className="about-container" direction="column">
       <Heading m={5}>About Me</Heading>
       <Flex className="flex-about" m={5}>
         <Text className="about-text">
-          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -14,8 +22,6 @@ const About = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -23,17 +29,10 @@ const About = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-          </p>
         </Text>
-        <div className="about-img">
-          <Image
-            alt="image"
-            src=""
-            className="profile-img"
-            width={300}
-            height={500}
-          />
-        </div>
+        <Flex className="about-img">
+          {View}
+        </Flex>
       </Flex>
     </Flex>
   );

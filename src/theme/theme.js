@@ -19,7 +19,7 @@ const components = {
   Heading: {
       baseStyle: props => ({
       color: mode('#f0e7db', '#ff63c3')(props),
-      textUnderlineOffset: 3,
+      textUnderlineOffset: 3
     })
   },
   Link: {
